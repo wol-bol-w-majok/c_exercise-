@@ -5,7 +5,7 @@ int main(){
     int size, result;
     int *firstVector, *secondVector;
 
-    printf("ENter length of vectors: ");
+    printf("Enter length of vectors: ");
     scanf("%d", &size);
 
     firstVector = (int *) malloc(size*sizeof(int));
@@ -14,7 +14,7 @@ int main(){
     retrieveData(size, firstVector);
     retrieveData(size, secondVector);
     result = dotProdFunc(firstVector, secondVector, size);
-    printf("%d\n", result); 
+    printf("The dot product is : %d\n", result); 
 
     free (firstVector);
     free (secondVector); 
